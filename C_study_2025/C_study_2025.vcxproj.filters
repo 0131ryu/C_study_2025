@@ -39,9 +39,15 @@
     <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="val.c">
+      <Filter>소스 파일\begin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h">
+      <Filter>헤더 파일\begin</Filter>
+    </ClInclude>
+    <ClInclude Include="val.h">
       <Filter>헤더 파일\begin</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "calc.h"
+#include "val.h"
 
 int main() {
-	calculate_and_print();
+	variable_and_print();
 	return 0;
 }
