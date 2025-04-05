@@ -13,10 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\begin">
+      <UniqueIdentifier>{4635b933-86c6-40dd-9130-21dc1cef194f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\intermediate">
+      <UniqueIdentifier>{3fdd85cc-4006-4c9c-abe8-95835a54a2b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\advance">
+      <UniqueIdentifier>{cf9e87fb-7e9d-4c33-a88e-61045577bcb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\begin">
+      <UniqueIdentifier>{131f3a40-475a-485b-8b75-5182534e8328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\intermediate">
+      <UniqueIdentifier>{7afe4e58-6ed9-4430-bc9b-c02ef83216e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\advance">
+      <UniqueIdentifier>{04a39910-dc61-41cb-94f7-7921061076c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="data_size.c">
+    <ClCompile Include="calc.c">
+      <Filter>소스 파일\begin</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="calc.h">
+      <Filter>헤더 파일\begin</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
