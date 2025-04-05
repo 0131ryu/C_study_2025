@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "val.h"
+#include "opr.h"
 
 int main() {
-	variable_and_print();
+	operation_and_print();
 	return 0;
 }
