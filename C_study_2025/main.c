@@ -2,6 +2,6 @@
 #include "opr.h"
 
 int main() {
-	exchane_alphbet_num();
+	choose_max_value();
 	return 0;
 }
