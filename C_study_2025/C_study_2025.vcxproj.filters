@@ -45,6 +45,9 @@
     <ClCompile Include="opr.c">
       <Filter>소스 파일\begin</Filter>
     </ClCompile>
+    <ClCompile Include="exam3.c">
+      <Filter>소스 파일\begin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h">
@@ -54,6 +57,9 @@
       <Filter>헤더 파일\begin</Filter>
     </ClInclude>
     <ClInclude Include="opr.h">
+      <Filter>헤더 파일\begin</Filter>
+    </ClInclude>
+    <ClInclude Include="exam3.h">
       <Filter>헤더 파일\begin</Filter>
     </ClInclude>
   </ItemGroup>
