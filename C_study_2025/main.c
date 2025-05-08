@@ -2,6 +2,6 @@
 #include "opr.h"
 
 int main() {
-	choose_max_value();
+	bus_fee();
 	return 0;
 }

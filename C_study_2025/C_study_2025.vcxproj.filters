@@ -51,6 +51,9 @@
     <ClCompile Include="exam4.c">
       <Filter>소스 파일\begin</Filter>
     </ClCompile>
+    <ClCompile Include="exam5.c">
+      <Filter>소스 파일\begin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h">
@@ -66,6 +69,9 @@
       <Filter>헤더 파일\begin</Filter>
     </ClInclude>
     <ClInclude Include="exam4.h">
+      <Filter>헤더 파일\begin</Filter>
+    </ClInclude>
+    <ClInclude Include="exam5.h">
       <Filter>헤더 파일\begin</Filter>
     </ClInclude>
   </ItemGroup>
