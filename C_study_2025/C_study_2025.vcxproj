@@ -23,6 +23,7 @@
     <ClCompile Include="exam3.c" />
     <ClCompile Include="exam4.c" />
     <ClCompile Include="exam5.c" />
+    <ClCompile Include="exam6.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="opr.c" />
     <ClCompile Include="val.c" />
@@ -32,6 +33,7 @@
     <ClInclude Include="exam3.h" />
     <ClInclude Include="exam4.h" />
     <ClInclude Include="exam5.h" />
+    <ClInclude Include="exam6.h" />
     <ClInclude Include="opr.h" />
     <ClInclude Include="val.h" />
   </ItemGroup>

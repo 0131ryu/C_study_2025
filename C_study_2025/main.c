@@ -2,6 +2,6 @@
 #include "opr.h"
 
 int main() {
-	bus_fee();
+	minus_result_ver2();
 	return 0;
 }
