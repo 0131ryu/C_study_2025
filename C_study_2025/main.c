@@ -2,6 +2,6 @@
 #include "opr.h"
 
 int main() {
-	two_array_sum();
+	multiplication_table();
 	return 0;
 }

@@ -60,6 +60,9 @@
     <ClCompile Include="exam7.c">
       <Filter>소스 파일\begin</Filter>
     </ClCompile>
+    <ClCompile Include="exam8.c">
+      <Filter>소스 파일\begin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h">
@@ -84,6 +87,9 @@
       <Filter>헤더 파일\begin</Filter>
     </ClInclude>
     <ClInclude Include="exam7.h">
+      <Filter>헤더 파일\begin</Filter>
+    </ClInclude>
+    <ClInclude Include="exam8.h">
       <Filter>헤더 파일\begin</Filter>
     </ClInclude>
   </ItemGroup>
