@@ -2,6 +2,6 @@
 #include "opr.h"
 
 int main() {
-	minus_result_ver2();
+	two_array_sum();
 	return 0;
 }
