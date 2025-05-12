@@ -28,6 +28,7 @@
     <ClCompile Include="exam8.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="opr.c" />
+    <ClCompile Include="pntr.c" />
     <ClCompile Include="val.c" />
   </ItemGroup>
   <ItemGroup>
@@ -39,6 +40,7 @@
     <ClInclude Include="exam7.h" />
     <ClInclude Include="exam8.h" />
     <ClInclude Include="opr.h" />
+    <ClInclude Include="pntr.h" />
     <ClInclude Include="val.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
