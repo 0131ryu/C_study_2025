@@ -66,6 +66,12 @@
     <ClCompile Include="pntr.c">
       <Filter>소스 파일\intermediate</Filter>
     </ClCompile>
+    <ClCompile Include="str.h">
+      <Filter>헤더 파일\intermediate</Filter>
+    </ClCompile>
+    <ClCompile Include="str.c">
+      <Filter>소스 파일\intermediate</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h">

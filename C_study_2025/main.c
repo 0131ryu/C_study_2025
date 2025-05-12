@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-	exam_pointer_ex2();
+	change_str_ex();
 	return 0;
 }
