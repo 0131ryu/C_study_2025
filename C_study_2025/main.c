@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include <stdio.h> //(컴파일 전) 전처리기
 
-int main() {
-	change_str_ex();
-	return 0;
+int main() { //메인함수의 시작~종결이 끝
+	hello_world();
+	return 0; 
 }

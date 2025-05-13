@@ -26,6 +26,7 @@
     <ClCompile Include="exam6.c" />
     <ClCompile Include="exam7.c" />
     <ClCompile Include="exam8.c" />
+    <ClCompile Include="hello.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="opr.c" />
     <ClCompile Include="pntr.c" />
@@ -41,6 +42,7 @@
     <ClInclude Include="exam6.h" />
     <ClInclude Include="exam7.h" />
     <ClInclude Include="exam8.h" />
+    <ClInclude Include="hello.h" />
     <ClInclude Include="opr.h" />
     <ClInclude Include="pntr.h" />
     <ClInclude Include="val.h" />
