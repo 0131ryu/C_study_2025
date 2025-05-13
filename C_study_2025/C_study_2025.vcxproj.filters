@@ -72,6 +72,9 @@
     <ClCompile Include="str.c">
       <Filter>소스 파일\intermediate</Filter>
     </ClCompile>
+    <ClCompile Include="hello.c">
+      <Filter>소스 파일\begin</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h">
@@ -103,6 +106,9 @@
     </ClInclude>
     <ClInclude Include="pntr.h">
       <Filter>헤더 파일\intermediate</Filter>
+    </ClInclude>
+    <ClInclude Include="hello.h">
+      <Filter>헤더 파일\begin</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
