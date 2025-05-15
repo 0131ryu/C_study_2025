@@ -18,4 +18,14 @@ void what_is_your_info(void);
 void szBuffer_left_right(void);
 
 void find_your_info(void);
+
+void two_int_result_double(void);
+
+void transfer_time(void);
+
+void change_two_int(void);
+
+void accumulate_sum(void);
+
+void minus_use_bit_operator(void);
 #endif
