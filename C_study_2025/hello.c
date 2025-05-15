@@ -117,3 +117,66 @@ void find_your_info() {
 	printf("당신의 나이는 %d살이고 이름은 '%s'입니다.", szAge, szName);
 	return 0;
 }
+
+void two_int_result_double() {
+	int a = 0, b = 0;
+	double result = 0;
+
+	printf("두 정수를 입력하세요. : ");
+	scanf_s("%d%d", &a, &b);
+	result = (double) (a + b) / 2;
+	printf("AVG: %.2f", result);
+	return 0;
+}
+
+void transfer_time() {
+	int time = 0;
+	int hour = 0, minute = 0, second = 0;
+
+	scanf_s("%d", &time);
+	hour = time / 3600;
+	minute = (time % 3600) / 60;
+	second = time % 60;
+
+	printf("%d초는 %02d시간 %02d분 %02d초입니다.",
+		time, hour, minute, second);
+	return 0;
+
+}
+
+void change_two_int() {
+	int a = 0, b = 0, tmp = 0;
+
+	scanf_s("%d%d", &a, &b);
+
+	tmp = a;
+	a = b;
+	b = tmp;
+
+	printf("a: %d, b: %d", a, b);
+	return 0;
+}
+
+void accumulate_sum() {
+	int input = 0, total = 0;
+
+	scanf_s("%d", &input);
+	total += input;
+	scanf_s("%d", &input);
+	total += input;
+	scanf_s("%d", &input);
+	total += input;
+	printf("Total : %d", total);
+	return 0;
+}
+
+void minus_use_bit_operator() {
+	int a = 0, b = 0;
+	int result = 0;
+	scanf_s("%d%d", &a, &b);
+
+	result = a + (~b + 1); // a- b와 동일, 보수 이용
+
+	printf("%d", result);
+	return 0;
+}
