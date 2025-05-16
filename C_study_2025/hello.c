@@ -180,3 +180,92 @@ void minus_use_bit_operator() {
 	printf("%d", result);
 	return 0;
 }
+
+void acceptance_or_failure() {
+	int score = 0;
+
+	printf("점수를 입력하세요 : ");
+	scanf_s("%d", &score);
+
+	printf("%s", score >= 80 ? "합격" : "불합격");
+
+	return 0;
+}
+
+void show_max_value() {
+	int input = 0;
+	int max = 0;
+	
+	scanf_s("%d%*c", &input);
+	max = input;
+	scanf_s("%d%*c", &input);
+	max = (max > input) ? max : input;
+	scanf_s("%d%*c", &input);
+	max = (max > input) ? max : input;
+	printf("MAX : %d", max);
+	return 0;
+}
+
+void show_max_value_all() {
+	int a = 0, b = 0, c = 0;
+	int max = 0;
+	
+	scanf_s("%d%d%d", &a, &b, &c);
+
+	max = (a > b) ? a : b;
+	max = (c > max) ? c : max;
+	printf("MAX : %d", max);
+	return 0;
+}
+
+void show_max_value_use_if() {
+	int input = 0, max = 0;
+
+	scanf_s("%d", &input);
+	max = input;
+	scanf_s("%d", &input);
+	if (max < input) {
+		max = input;
+	}
+	scanf_s("%d", &input);
+	if (max < input) {
+		max = input;
+	}
+	printf("MAX: %d", max);
+	return 0;
+}
+
+void what_is_bus_fare() {
+	int bus_fare = 750;
+	int age = 0;
+
+	scanf_s("%d", &age);
+	if (age >= 20) {
+		age = 20;
+		bus_fare = 1000;
+	}
+
+	printf("나이 : %d, 최종요금: %d원", age, bus_fare);
+	return 0;
+}
+
+void age_differential_bus_fare() {
+	int age = 0;
+	double rate = 0.0;
+	scanf_s("%d", &age);
+	if (age < 14) 
+		if (age < 4) 
+			rate = 0.0;
+		else 
+			rate = 0.5;
+	else 
+		if (age >= 20) 
+			rate = 1.0;
+		else 
+			rate = 0.75;
+	
+
+	double fee = 1000 * rate;
+	printf("요금은 %d원", (int)fee);
+	return 0;
+}

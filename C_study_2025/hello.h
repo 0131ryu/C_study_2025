@@ -28,4 +28,16 @@ void change_two_int(void);
 void accumulate_sum(void);
 
 void minus_use_bit_operator(void);
+
+void acceptance_or_failure(void);
+
+void show_max_value(void);
+
+void show_max_value_all(void);
+
+void show_max_value_use_if(void);
+
+void what_is_bus_fare(void);
+
+void age_differential_bus_fare(void);
 #endif
