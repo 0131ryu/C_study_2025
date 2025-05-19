@@ -40,4 +40,16 @@ void show_max_value_use_if(void);
 void what_is_bus_fare(void);
 
 void age_differential_bus_fare(void);
+
+void show_star_number(void);
+
+void show_sum_one_to_ten(void);
+
+void five_multiple_five(void);
+
+void triangle_five_star(void);
+
+void opposite_triangle_five_star(void);
+
+void tree_triangle(void);
 #endif
