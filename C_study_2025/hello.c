@@ -269,3 +269,86 @@ void age_differential_bus_fare() {
 	printf("요금은 %d원", (int)fee);
 	return 0;
 }
+
+void show_star_number() {
+	int input = 0, i = 0;
+
+	scanf_s("%d", &input);
+
+	while (input < 1 || input > 9) {
+		puts("1~9 사이의 값을 입력 바랍니다.");
+		return 0;
+	}
+
+	while (i < input) {
+		printf("*\t");
+		++i;
+	}
+
+	return 0;
+}
+
+void show_sum_one_to_ten() {
+	int cnt = 0;
+	int result = 0;
+
+	while (cnt < 11) {
+		for (int i = 1; i <= 10; i++) {
+			cnt += i;
+			result += i;
+		}
+		printf("Total : %d", result);
+	}
+
+	return 0;
+}
+
+void five_multiple_five() {
+	for (int i = 1; i <= 5; i++) {
+		for (int j = 1; j <= 5; j++) {
+			printf("*\t");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+void triangle_five_star() {
+	for (int i = 1; i <= 5; i++) {
+		for (int j = 1; j <= i; j++) {
+			printf("*\t");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+void opposite_triangle_five_star() {
+	for (int i = 0; i < 5; ++i)
+	{ 
+		for (int j = 0; j < 5; ++j)
+		{
+			if (j >= 4 - i)
+				printf("* ");
+			else
+				printf("  ");
+		}
+		putchar('\n');
+	}
+	return 0;
+}
+
+void tree_triangle() {
+	for (int i = 0; i < 5; ++i)
+	{
+		for (int j = 0; j < 5 + i; ++j)
+		{
+			if (j >= 4 - i)
+				printf("* ");
+			else
+				printf("  ");
+		}
+		putchar('\n');
+	}
+	return 0;
+}
