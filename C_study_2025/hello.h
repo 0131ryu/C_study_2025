@@ -52,4 +52,18 @@ void triangle_five_star(void);
 void opposite_triangle_five_star(void);
 
 void tree_triangle(void);
+
+void find_array_max(void);
+
+void find_array_min(void);
+
+void bubble_sort(void);
+
+void sort_selection(void);
+
+void show_five_to_five(void);
+
+void snail_arrangement(void);
+
+void lookup_array(void);
 #endif
