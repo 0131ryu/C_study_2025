@@ -352,3 +352,187 @@ void tree_triangle() {
 	}
 	return 0;
 }
+
+void find_array_max() {
+	int intArray[5] = { 50, 40, 10, 50, 20 };
+	int nMax = 0;
+
+	nMax = intArray[0];
+
+	for (int i = 0; i < 5; i++) {
+		if (intArray[i] > nMax) {
+			nMax = intArray[i];
+		}
+	}
+	printf("MAX: %d", nMax);
+	return 0;
+}
+
+void find_array_min() {
+	int intArray[5] = { 50, 40, 10, 50, 20 };
+	int nMin = 0;
+
+	for (int i = 0; i < 5; i++) {
+			if (intArray[0] > intArray[i]) {
+				//nMin = intArray[i];
+
+				int tmp = intArray[0];
+				intArray[0] = intArray[i];
+				intArray[i] = tmp;
+		}
+	}
+	printf("MIN: %d", intArray[0]);
+
+	return 0;
+}
+
+void bubble_sort() {
+	int aList[5] = { 30, 40, 10, 50, 20 };
+
+	for (int j = 0; j < 4; j++) {
+		for (int i = j+1; i < 5; i++) {
+			if (aList[j] > aList[i]) {
+				int tmp = aList[j];
+				aList[j] = aList[i];
+				aList[i] = tmp;
+			}
+		}
+
+		for (int i = 0; i < 5; i++) {
+			printf("%d ", aList[i]);
+		}
+		printf("\n");
+	}
+	
+	return 0;
+}
+
+void sort_selection() {
+	int aList[6] = {30, 50, 10, 20, 40, 70};
+	int idx = 0;
+
+	for (int i = 0; i < 5; i++) {
+		idx = i;
+		for (int j = i + 1; j < 6; j++) {
+			if (aList[idx] > aList[j]) {
+				idx = j;
+			}
+		}
+		if (idx != i) {
+			int tmp = aList[i];
+			aList[i] = aList[idx];
+			aList[idx] = tmp;
+		}
+	}
+
+	for (int i = 0; i < 5; i++) {
+		printf("%d ", aList[i]);
+	}
+
+	return 0;
+}
+
+void show_five_to_five() {
+	
+	int aList[5][5] = { 0 };
+	int sum = 0;
+
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			if (i % 2 == 0) {
+				aList[i][j] = ++sum;
+			}
+			else {
+				aList[i][4-j] = ++sum;
+			}
+			
+		}
+	}
+
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			printf("%d ", aList[i][j]);
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
+
+void snail_arrangement() {
+	int aList[5][5] = { 0 };
+	int sum = 0;
+	int top = 0, bottom = 4, left = 0, right = 4;
+	int i = 0, j = 0;
+
+	while (top <= bottom && left <= right) {
+		//상단 행
+		for (j = left; j <= right; j++) {
+			aList[top][j] = ++sum;
+		}
+		top++;
+
+		//우측 열
+		for (i = top; i <= bottom; i++) {
+			aList[i][right] = ++sum;
+		}
+		right--;
+
+		//하단 행
+		if (top <= bottom) {
+			for (j = right; j >= left; j--) {
+				aList[bottom][j] = ++sum;
+			}
+			bottom--;
+		}
+
+		//좌측 열
+		if (left <= right) {
+			for (i = bottom; i >= top; i--) {
+				aList[i][left] = ++sum;
+			}
+			left++;
+		}
+	}
+
+	for (i = 0; i < 5; i++) {
+		for (j = 0; j < 5; j++) {
+			printf("%2d ", aList[i][j]);
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
+
+void lookup_array() {
+	//전체 경우에 대한 과금률 결과를 담은 배열의 선언 및 정의
+	double aRate[10] = {
+		0.0, 0.1, 0.25, //1~3세 0%, 10%, 25%
+		0.5, 0.5,	//4~5세
+		0.6, 0.65,	//6~7세
+		0.8, 0.82, 0.97	//8~10세
+	};
+	int nAge = 0, nFee = 1000;
+
+	printf("요금표");
+	for (int i = 1; i <= 10; i++) {
+		printf("%2d세 요금: %3d원\n", i, (int)(nFee * aRate[i - 1]));
+	}
+
+	printf("나이를 입력하세요. : ");
+	if (scanf_s("%d", &nAge) != 1) {
+		printf("잘못된 입력입니다. 나이를 숫자로 입력해주세요.\n");
+		return 1; // 입력 실패 시 종료
+	}
+
+	if (nAge < 1) {
+		nAge = 1;
+	}
+	else if (nAge > 10) {
+		nAge = 10;
+	}
+	printf("최종 요금: %d\n", (int)(nFee * aRate[nAge - 1]));
+
+	return 0;
+}
