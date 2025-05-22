@@ -66,4 +66,12 @@ void show_five_to_five(void);
 void snail_arrangement(void);
 
 void lookup_array(void);
+
+void function_ex1(void);
+
+void pointer_ex1(void);
+
+void pointer_ex2(void);
+
+void pointer_ex3(void);
 #endif
