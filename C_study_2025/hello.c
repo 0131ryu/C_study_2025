@@ -536,3 +536,61 @@ void lookup_array() {
 
 	return 0;
 }
+
+static void ex1_input(int *a, int *b, int *c) {
+	printf("세 정수를 입력하세요: ");
+	scanf_s("%d%d%d", a, b, c);
+}
+
+static int ex1_output(int a, int b, int c) {
+	int inputMax = a;
+	inputMax = (inputMax > b) ? inputMax : b;
+	inputMax = (inputMax > c) ? inputMax : c;
+	return inputMax;
+}
+
+void function_ex1() {
+	int a = 0, b = 0, c = 0;
+	int max = 0;
+	//UI
+	ex1_input(&a, &b, &c);
+	//최댓값 계산
+	max = ex1_output(a, b, c);
+	
+	printf("MAX : %d", max);
+	return 0;
+}
+
+void pointer_ex1() {
+	int nData = 10;
+	printf("%s\n", "nData");
+	
+	printf("%d\n", nData);
+	printf("%p\n", &nData);
+	return 0;
+}
+
+void pointer_ex2() {
+	int aList[5] = { 0 };
+	int* pnData = aList;
+
+	printf("aList[0] : %d\n", aList[0]);
+
+	*pnData = 20;
+	printf("aList[0]: %d\n", aList[0]);
+	printf("pnData[0]: %d\n", pnData[0]);
+}
+
+void pointer_ex3() {
+	//문자열의 길이 확인
+	char szBuffer[16] = { "Hello" };
+	char* pszData = szBuffer;
+
+	while (*pszData != '\0')
+		pszData++;
+
+	printf("&pszData : %p, &szBuffer : %p\n", pszData, szBuffer);
+	printf("Length : %d\n", pszData - szBuffer);
+
+	return 0;
+}
