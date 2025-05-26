@@ -74,4 +74,20 @@ void pointer_ex1(void);
 void pointer_ex2(void);
 
 void pointer_ex3(void);
+
+void pointer_ex4(void);
+
+void pointer_ex5_error(void);
+
+void pointer_ex5_right(void);
+
+void pointer_ex6(void);
+
+void pointer_ex7(void);
+
+void pointer_ex8(void);
+
+void pointer_ex9(void);
+
+void pointer_ex10(void);
 #endif

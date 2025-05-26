@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "hello.h"
 
 int hello_world() { //함수, int는 함수의 타입
@@ -592,5 +593,136 @@ void pointer_ex3() {
 	printf("&pszData : %p, &szBuffer : %p\n", pszData, szBuffer);
 	printf("Length : %d\n", pszData - szBuffer);
 
+	return 0;
+}
+
+void pointer_ex4() {
+	int* pList = NULL;
+
+	pList = (int*)malloc(sizeof(int) * 3);
+
+	pList[0] = 10;
+	pList[1] = 20;
+	pList[2] = 30;
+	//pList[3] = 50;
+
+	for (int i = 0; i < 3; i++)
+		printf("%d\n", pList[i]);
+	
+	free(pList);
+	return 0;
+}
+
+void pointer_ex5_error() {
+	char szBuffer[12] = { "HelloWorld" };
+	char* pszData = NULL;
+	pszData = (char*)malloc(sizeof(char) * 12);
+	
+	//오류
+	pszData = szBuffer; 
+	//pszData가 malloc을 통해 할당받았던 힙 메모리 블록의 주소를 잃어버림
+
+	pszData = NULL; // 안전을 위해 NULL로 설정
+	return 0;
+}
+
+void pointer_ex5_right() {
+	char szBuffer[12] = { "HelloWorld" };
+	char* pszData = NULL;
+
+	//메모리 할당
+	pszData = malloc(12);
+	if (pszData == NULL) {
+		printf("Memonry allocation failed\n");
+		return 1;
+	}
+
+	//문자열 복사
+	if (strcpy_s(pszData, 12, szBuffer) != 0) {
+		printf("strcpy_s failed");
+		free(pszData);
+		return 1;
+	}
+
+	printf("pszData : %s\n", pszData);
+
+	free(pszData); //malloc로 할당된 메모리를 free로 해제
+	pszData = NULL;
+
+	return 0;
+}
+
+void pointer_ex6() {
+	char szBuffer[12] = { "TestString" };
+	char* pszData = "TestString";
+
+	//0이 같은 경우
+	printf("%d\n", strcmp(szBuffer, pszData)); //0
+	printf("%d\n", strcmp("TestString", pszData)); //0
+	printf("%d\n", strcmp("Test", "TestString")); //-1
+	printf("%d\n", strcmp("TestString", "Test")); //1
+	return 0;
+}
+
+void pointer_ex7() {
+	char szBuffer[32] = { "I am a boy." };
+	
+	printf("%p\n", szBuffer);
+
+	char* ptr_am = strstr(szBuffer, "am");
+	char* ptr_boy = strstr(szBuffer, "boy");
+
+	printf("%p\n", (void*)ptr_am);
+	printf("%p\n", (void*)ptr_boy);
+
+	printf("INDEX : %d\n", ptr_am - szBuffer); 
+	printf("INDEX : %d\n", ptr_boy - szBuffer);
+	return 0;
+}
+
+void pointer_ex8() {
+	char* astrList[3] = { "Hello", "World", "String" };
+
+	printf("%s\n", astrList[0]);
+	printf("%s\n", astrList[1]);
+	printf("%s\n", astrList[2]);
+
+	printf("%s\n", astrList[0]+1); //ello
+	printf("%s\n", astrList[1]+2); //rld
+	printf("%s\n", astrList[2]+3); //ing
+
+	printf("%c\n", astrList[0][3]); //l
+	printf("%c\n", astrList[1][3]); //l
+	printf("%c\n", astrList[2][3]); //i
+}
+
+void pointer_ex9() {
+	char astrList[2][12] = { "Hello", "World" };
+	char(*pstrList)[12] = astrList;
+
+	puts(pstrList[0]);
+	puts(pstrList[1]);
+}
+
+int TestFunc(void) {
+	static int nData = 10; //마치 전역변수 같음
+	++nData; 
+	return nData;
+}
+
+int TestFuncTwo(void) {
+	int nData = 10; //매번 새로 생김
+	++nData;
+	return nData;
+}
+
+void pointer_ex10() {
+	printf("%d\n", TestFunc());
+	printf("%d\n", TestFunc());
+	printf("%d\n", TestFunc());
+	printf("------------------------------\n");
+	printf("%d\n", TestFuncTwo());
+	printf("%d\n", TestFuncTwo());
+	printf("%d\n", TestFuncTwo());
 	return 0;
 }
