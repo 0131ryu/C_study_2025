@@ -75,6 +75,9 @@
     <ClCompile Include="hello.c">
       <Filter>소스 파일\begin</Filter>
     </ClCompile>
+    <ClCompile Include="func.c">
+      <Filter>소스 파일\intermediate</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h">
@@ -109,6 +112,9 @@
     </ClInclude>
     <ClInclude Include="hello.h">
       <Filter>헤더 파일\begin</Filter>
+    </ClInclude>
+    <ClInclude Include="func.h">
+      <Filter>헤더 파일\intermediate</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
