@@ -90,4 +90,6 @@ void pointer_ex8(void);
 void pointer_ex9(void);
 
 void pointer_ex10(void);
+
+void function_ex_strcpy(void);
 #endif
