@@ -81,6 +81,9 @@
     <ClCompile Include="str_data.c">
       <Filter>소스 파일\intermediate</Filter>
     </ClCompile>
+    <ClCompile Include="data_structure.c">
+      <Filter>소스 파일\advance</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h">
@@ -121,6 +124,9 @@
     </ClInclude>
     <ClInclude Include="str_data.h">
       <Filter>헤더 파일\intermediate</Filter>
+    </ClInclude>
+    <ClInclude Include="data_structure.h">
+      <Filter>헤더 파일\advance</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
