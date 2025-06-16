@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="basic_theory.c" />
     <ClCompile Include="calc.c" />
     <ClCompile Include="data_structure.c" />
     <ClCompile Include="exam3.c" />
@@ -32,6 +33,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="opr.c" />
     <ClCompile Include="pntr.c" />
+    <ClCompile Include="single_linked_list.c" />
     <ClCompile Include="str.c" />
     <ClCompile Include="str.h" />
     <ClCompile Include="str_data.c" />
@@ -50,8 +52,12 @@
     <ClInclude Include="hello.h" />
     <ClInclude Include="opr.h" />
     <ClInclude Include="pntr.h" />
+    <ClInclude Include="single_linked_list.h" />
     <ClInclude Include="str_data.h" />
     <ClInclude Include="val.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basic_theory.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
