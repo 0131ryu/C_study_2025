@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="basic_theory.c" />
     <ClCompile Include="calc.c" />
     <ClCompile Include="data_structure.c" />
     <ClCompile Include="exam3.c" />
@@ -52,6 +53,9 @@
     <ClInclude Include="pntr.h" />
     <ClInclude Include="str_data.h" />
     <ClInclude Include="val.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basic_theory.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
