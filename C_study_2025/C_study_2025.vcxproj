@@ -33,6 +33,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="opr.c" />
     <ClCompile Include="pntr.c" />
+    <ClCompile Include="single_linked_list.c" />
     <ClCompile Include="str.c" />
     <ClCompile Include="str.h" />
     <ClCompile Include="str_data.c" />
@@ -51,6 +52,7 @@
     <ClInclude Include="hello.h" />
     <ClInclude Include="opr.h" />
     <ClInclude Include="pntr.h" />
+    <ClInclude Include="single_linked_list.h" />
     <ClInclude Include="str_data.h" />
     <ClInclude Include="val.h" />
   </ItemGroup>
