@@ -33,6 +33,7 @@
     <ClCompile Include="func.c" />
     <ClCompile Include="hello.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="opr.c" />
     <ClCompile Include="pntr.c" />
     <ClCompile Include="single_linked_list.c" />
