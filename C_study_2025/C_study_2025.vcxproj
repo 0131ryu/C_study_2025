@@ -21,7 +21,10 @@
   <ItemGroup>
     <ClCompile Include="basic_theory.c" />
     <ClCompile Include="calc.c" />
+    <ClCompile Include="chapter03.cpp" />
     <ClCompile Include="data_structure.c" />
+    <ClCompile Include="double_linked_list.c" />
+    <ClCompile Include="dummy_node_list.c" />
     <ClCompile Include="exam3.c" />
     <ClCompile Include="exam4.c" />
     <ClCompile Include="exam5.c" />
@@ -31,6 +34,7 @@
     <ClCompile Include="func.c" />
     <ClCompile Include="hello.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="opr.c" />
     <ClCompile Include="pntr.c" />
     <ClCompile Include="single_linked_list.c" />
@@ -41,7 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h" />
+    <ClInclude Include="chapter03.h" />
     <ClInclude Include="data_structure.h" />
+    <ClInclude Include="double_linked_list.h" />
+    <ClInclude Include="dummy_node_list.h" />
     <ClInclude Include="exam3.h" />
     <ClInclude Include="exam4.h" />
     <ClInclude Include="exam5.h" />
