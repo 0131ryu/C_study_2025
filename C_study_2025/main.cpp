@@ -1,14 +1,6 @@
-#include <iostream>
+#include "chapter03.h"
 
-int main() { 
-	std::string strData = "Test String";
-
-	std::cout << "Sample string" << std::endl;
-	std::cout << strData << std::endl;
-	
-	strData = "New string";
-	std::cout << strData << std::endl;
-
-	std::cout << "저는" << 20 << "살" << "입니다" << std::endl;
-	return 0;
+int main() {
+    chapter03::cpp_chapter03_ex7();
+    return 0;
 }
