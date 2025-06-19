@@ -108,6 +108,9 @@
     <ClCompile Include="chapter03.cpp">
       <Filter>소스 파일\cpp_ex</Filter>
     </ClCompile>
+    <ClCompile Include="chapter04.cpp">
+      <Filter>소스 파일\cpp_ex</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h">
@@ -162,6 +165,9 @@
       <Filter>헤더 파일\advance</Filter>
     </ClInclude>
     <ClInclude Include="chapter03.h">
+      <Filter>헤더 파일\cpp_ex</Filter>
+    </ClInclude>
+    <ClInclude Include="chapter04.h">
       <Filter>헤더 파일\cpp_ex</Filter>
     </ClInclude>
   </ItemGroup>

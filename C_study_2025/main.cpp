@@ -1,6 +1,10 @@
-#include "chapter03.h"
+#include "chapter04.h"
 
 int main() {
-    chapter03::cpp_chapter03_ex7();
+    //chapter04::cpp_chapter04_ex3();
+    testFunc2();
+    ::testFunc2();
+    Test::testFunc2();
+    MyData::testFunc2();
     return 0;
 }

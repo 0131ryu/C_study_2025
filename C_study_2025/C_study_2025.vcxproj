@@ -22,6 +22,7 @@
     <ClCompile Include="basic_theory.c" />
     <ClCompile Include="calc.c" />
     <ClCompile Include="chapter03.cpp" />
+    <ClCompile Include="chapter04.cpp" />
     <ClCompile Include="data_structure.c" />
     <ClCompile Include="double_linked_list.c" />
     <ClCompile Include="dummy_node_list.c" />
@@ -46,6 +47,7 @@
   <ItemGroup>
     <ClInclude Include="calc.h" />
     <ClInclude Include="chapter03.h" />
+    <ClInclude Include="chapter04.h" />
     <ClInclude Include="data_structure.h" />
     <ClInclude Include="double_linked_list.h" />
     <ClInclude Include="dummy_node_list.h" />
